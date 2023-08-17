@@ -1,22 +1,9 @@
 ﻿using Atividade;
 using System;
 using static Atividade.Aluno;
-
-
-//Instânciar Aluno
-
-// Aluno a = new Aluno();
-// a.nota1 = 7;
-// a.nota2 = 6;
-// a.nota3 = 5;
-// a.nota4 =  7.5;
-
 using System.Globalization;
 using System.Net.Mime;
 
-
-
-using System;
 
 namespace Atividade
 {
@@ -24,7 +11,7 @@ namespace Atividade
     {
         public static void Main(string[] args)
         {
-            for (int i = 1; i <= 10; i++)
+            for (double i = 1; i <= 10; i++)
             {
                 Console.WriteLine($"Entre com as notas do Aluno {i}:");
                 double nota1 = Convert.ToDouble(Console.ReadLine());

@@ -8,7 +8,7 @@ public class Aluno
     //Atributos
     public double nota1, nota2, nota3, nota4;
     
-    
+  
     //Cálculo da Média
     public double Media()
     {
@@ -17,18 +17,17 @@ public class Aluno
     //Situação
     public string Avaliacao(double media)
     {
-        String retorno;
+        String retorno = "Média invalida";
         //Condicional
-        if(media <4.9)
+        if(media < 4.9)
         {
             retorno = "Infelizmente você foi reprovado";
         }
-
-         if (media >= 5 && media <= 6.9)
+        else if (media >= 5 && media <= 6.9)
         {
             retorno = "Você está em Recuperação";
         }
-        else 
+        else if(media >=7 && media <=10) 
         {
             retorno = "Parabéns você foi Aprovado!";
         }
@@ -44,9 +43,6 @@ public class Aluno
 
         //Exibir mensagem
         Console.WriteLine("Sua média "+obterCalculo);
-        Console.WriteLine("Sua média"+obterSituacao);
-        Console.WriteLine("Sua média "+obterCalculo);
-        Console.WriteLine("Sua média "+obterCalculo);
-        Console.WriteLine("Sua média "+obterCalculo);
+        Console.WriteLine("Prezado Aluno, "+obterSituacao);
     }
 }
